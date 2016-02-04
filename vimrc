@@ -32,7 +32,7 @@ nnoremap ; :
 vnoremap ; :
 "nnoremap <silent> <esc> :noh<cr><esc>
 "inoremap jk <esc>
-"vnoremap fj <esc>
+inoremap fj <esc>
 "cnoremap jk <c-u><esc>
 nnoremap <c-h> :q<cr>
 nnoremap <leader>bd :bp<bar>sp<bar>bn<bar>bd<cr>
