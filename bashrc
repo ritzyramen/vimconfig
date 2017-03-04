@@ -4,7 +4,7 @@ BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 if [ ! "${BRANCH}" == "" ]
 then
 STAT=`parse_git_dirty`
-echo "[${BRANCH}${STAT}]"
+echo " [${BRANCH}${STAT}]"
 else
 echo ""
 fi
@@ -47,5 +47,5 @@ fi
 
 #export PS1="\`parse_git_branch\` "
 
-export PS1="\[\e[31m\]vizard310@hq.unrez.com\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]> \[\e[m\] \`parse_git_branch\` >"
+export PS1="\[\e[31m\]vizard310@hq.unrez.com\[\e[m\] \[\e[32m\]\w\[\e[m\]\[\e[34m\]\`parse_git_branch\`\[\e[m\] \[\e[35m\]>\[\e[m\] "
 
